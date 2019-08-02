@@ -24,20 +24,21 @@ function consistentFilter(arr) {
         aTemp = [];
     for (var nI = 0; nI < arr.length; nI++) {
         var oSlot = arr[nI];
-        if (memoTime && memoTime !== oSlot.time) {
+        if (memoTime && memoTime !== oSlot.ts) {
             aGroupedValues.push(aTemp);
             aTemp = [];
         }
         aTemp.push(oSlot);
-        memoTime = oSlot.time;
+        memoTime = oSlot.ts;
         if (nI === arr.length - 1) {
             aGroupedValues.push(aTemp);
         }
     }
+    console.log(aGroupedValues);
     for (var nJ = 0; nJ < aGroupedValues.length; nJ++) {
         var aSlots = aGroupedValues[nJ];
         nMax = aSlots.length;
-        oResult[aSlots[nCurrPos].time] = aSlots[nCurrPos];
+        oResult[aSlots[nCurrPos].ts] = aSlots[nCurrPos];
         nCurrPos++;
         if (nCurrPos >= nMax) {
             nCurrPos = 0;
