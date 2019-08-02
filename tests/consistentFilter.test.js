@@ -22,27 +22,27 @@ test('easy-case', () => {
 
 test('stronger-case', () => {
     const initialArr = [
-        { id: 't1', ts: 1 }, //gCounter = 0, cur = 1
-        { id: 't2', ts: 1 }, //gCounter = 0, cur = 1
-        { id: 't1', ts: 2 }, //gCounter = 1, cur = 1
-        { id: 't2', ts: 2 }, //gCounter = 2, cur = 1
-        { id: 't1', ts: 3 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 3 }, //gCounter = 0, cur = 0
-        { id: 't1', ts: 4 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 4 }, //gCounter = 0, cur = 0
-        { id: 't1', ts: 5 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 5 }, //gCounter = 0, cur = 0
-        { id: 't1', ts: 6 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 6 }, //gCounter = 0, cur = 0
-        { id: 't1', ts: 7 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 7 }, //gCounter = 0, cur = 0
-        { id: 't3', ts: 7 }, //gCounter = 0, cur = 0
-        { id: 't1', ts: 8 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 8 }, //gCounter = 0, cur = 0
-        { id: 't3', ts: 8 }, //gCounter = 0, cur = 0
-        { id: 't1', ts: 9 }, //gCounter = 0, cur = 0
-        { id: 't2', ts: 9 }, //gCounter = 0, cur = 0
-        { id: 't3', ts: 9 } //gCounter = 0, cur = 0
+        { id: 't1', ts: 1 },
+        { id: 't2', ts: 1 },
+        { id: 't1', ts: 2 },
+        { id: 't2', ts: 2 },
+        { id: 't1', ts: 3 },
+        { id: 't2', ts: 3 },
+        { id: 't1', ts: 4 },
+        { id: 't2', ts: 4 },
+        { id: 't1', ts: 5 },
+        { id: 't2', ts: 5 },
+        { id: 't1', ts: 6 },
+        { id: 't2', ts: 6 },
+        { id: 't1', ts: 7 },
+        { id: 't2', ts: 7 },
+        { id: 't3', ts: 7 },
+        { id: 't1', ts: 8 },
+        { id: 't2', ts: 8 },
+        { id: 't3', ts: 8 },
+        { id: 't1', ts: 9 },
+        { id: 't2', ts: 9 },
+        { id: 't3', ts: 9 }
     ];
     const expectedObj = {
         1: { id: 't1', ts: 1 },
